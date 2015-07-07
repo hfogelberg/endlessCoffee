@@ -1,0 +1,19 @@
+<head>
+	<title>Endless test</title>
+</head>
+<body>
+	<h1>Endless test</h1>
+	{{> itemsTemplate}}
+</body>
+
+
+<template name="itemsTemplate">
+	{{#each items}}
+		<div class='well'>
+			<h3>{{title}}</h3>
+			<p>{{comment}}</p>
+		</div>
+	{{/each}}
+
+	<div class="btn btn-success">Get more</div>
+</template>
